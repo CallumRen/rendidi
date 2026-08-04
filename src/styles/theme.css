@@ -1,0 +1,39 @@
+/* Register design tokens for Tailwind v4 */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --font-app: var(--font-google-sans-code);
+}
+
+/*
+ * Color scheme matched to https://satnaing.dev/blog
+ * (marrsgreen / carrigreen palette from the author's Next.js blog)
+ */
+
+/* Light theme values */
+:root,
+[data-theme="light"] {
+  --background: #f9fafb; /* bglight */
+  --foreground: #1d2a35; /* bgdark used as text */
+  --accent: #007a7a; /* marrsgreen */
+  --accent-foreground: #f9fafb;
+  --muted: #eff3f3; /* cardlight */
+  --muted-foreground: #6b7280;
+  --border: #d1d5db;
+}
+
+/* Dark theme values */
+[data-theme="dark"] {
+  --background: #1d2a35; /* bgdark */
+  --foreground: #f9fafb; /* textlight */
+  --accent: #05ce91; /* carrigreen */
+  --accent-foreground: #1d2a35;
+  --muted: #22323f; /* carddark */
+  --muted-foreground: #9ca3af;
+  --border: #2f4354;
+}
