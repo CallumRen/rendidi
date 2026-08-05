@@ -1,4 +1,4 @@
-import { defineAstroPaperConfig } from "./src/lib/schema/config";
+import { defineAstroPaperConfig } from "./src/scripts/schema/types";
 
 export default defineAstroPaperConfig({
   site: {

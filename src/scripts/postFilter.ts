@@ -1,5 +1,5 @@
 import type { CollectionEntry } from "astro:content";
-import config from "@/lib/config";
+import config from "@/scripts/config";
 
 /**
  * Determines whether a post is eligible to be listed/rendered.

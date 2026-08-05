@@ -1,8 +1,8 @@
 ---
 import { getRelativeLocaleUrl } from "astro:i18n";
-import { stripBase, stripLocale } from "@/lib/withBase";
-import { useTranslations } from "@/lib/locales";
-import config from "@/lib/config";
+import { stripBase, stripLocale } from "@/scripts/withBase";
+import { useTranslations } from "@/scripts/locales";
+import config from "@/scripts/config";
 
 const locale = Astro.currentLocale ?? config.site.lang;
 const t = useTranslations(locale);

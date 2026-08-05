@@ -30,7 +30,7 @@ AstroPaper now ships with Astro v6.3, which includes:
 The flat `SITE` object in `src/config.ts` and the separate `constants.ts` file have been replaced by a single `astro-paper.config.ts` at the project root. Use `defineAstroPaperConfig()` for full IntelliSense:
 
 ```ts file="astro-paper.config.ts"
-import { defineAstroPaperConfig } from "./src/types/config";
+import { defineAstroPaperConfig } from "./src/scripts/schema/types";
 
 export default defineAstroPaperConfig({
   site: {
@@ -144,9 +144,9 @@ The 5-token color palette from v5 has grown to 7 tokens in `src/styles/theme.css
 
 ### i18n string extraction
 
-All UI strings are extracted to `src/i18n/lang/en.ts` with the `UIStrings` interface. Adding a new language requires only a new file in `src/i18n/lang/`:
+All UI strings are extracted to `src/scripts/locales/lang/en.ts` with the `UIStrings` interface. Adding a new language requires only a new file in `src/scripts/locales/lang/`:
 
-```ts file="src/i18n/lang/en.ts"
+```ts file="src/scripts/locales/lang/en.ts"
 export default {
   nav: { home: "Home", posts: "Posts" /* … */ },
   post: { publishedAt: "Published at" /* … */ },

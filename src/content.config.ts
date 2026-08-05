@@ -1,7 +1,7 @@
 import { defineCollection } from "astro:content";
 import { z } from "astro/zod";
 import { glob } from "astro/loaders";
-import config from "@/lib/config";
+import config from "@/scripts/config";
 
 export const BLOG_PATH = "src/blog";
 export const POSTS_PATH = `${BLOG_PATH}/posts`;

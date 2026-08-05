@@ -16,7 +16,7 @@ import {
   transformerNotationHighlight,
   transformerNotationWordHighlight,
 } from "@shikijs/transformers";
-import { transformerFileName } from "./src/lib/transformers/fileName";
+import { transformerFileName } from "./src/scripts/transformers/fileName";
 import config from "./rendidi.config";
 
 export default defineConfig({

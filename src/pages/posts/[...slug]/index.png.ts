@@ -2,9 +2,9 @@ import type { APIRoute } from "astro";
 import { getCollection } from "astro:content";
 import satori from "satori";
 import sharp from "sharp";
-import { getOgFontBuffers } from "@/lib/getOgFontBuffers";
-import { getPostSlug } from "@/lib/getPostPaths";
-import config from "@/lib/config";
+import { getOgFontBuffers } from "@/scripts/getOgFontBuffers";
+import { getPostSlug } from "@/scripts/getPostPaths";
+import config from "@/scripts/config";
 
 export async function getStaticPaths() {
   if (!config.features.dynamicOgImage) {

@@ -8,9 +8,9 @@ import Main from "@/components/Main.astro";
 import Card from "@/components/Card.astro";
 import Footer from "@/components/Footer.astro";
 import Pagination from "@/components/Pagination.astro";
-import { getSortedPosts } from "@/lib/getSortedPosts";
-import { useTranslations } from "@/lib/locales";
-import config from "@/lib/config";
+import { getSortedPosts } from "@/scripts/getSortedPosts";
+import { useTranslations } from "@/scripts/locales";
+import config from "@/scripts/config";
 
 export const getStaticPaths = (async ({ paginate }) => {
   const posts = await getCollection("posts", ({ data }) => !data.draft);

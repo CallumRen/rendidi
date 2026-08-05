@@ -1,8 +1,8 @@
 import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
-import { getSortedPosts } from "@/lib/getSortedPosts";
-import { getPostUrl } from "@/lib/getPostPaths";
-import config from "@/lib/config";
+import { getSortedPosts } from "@/scripts/getSortedPosts";
+import { getPostUrl } from "@/scripts/getPostPaths";
+import config from "@/scripts/config";
 
 export async function GET() {
   const posts = await getCollection("posts");

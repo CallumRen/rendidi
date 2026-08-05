@@ -2,9 +2,9 @@
 import { Font } from "astro:assets";
 import { ClientRouter } from "astro:transitions";
 import { getRelativeLocaleUrl } from "astro:i18n";
-import { resolveDefaultOgImagePath } from "@/lib/resolveDefaultOgImagePath";
-import { getAssetPath } from "@/lib/withBase";
-import config from "@/lib/config";
+import { resolveDefaultOgImagePath } from "@/scripts/resolveDefaultOgImagePath";
+import { getAssetPath } from "@/scripts/withBase";
+import config from "@/scripts/config";
 import "@/styles/global.css";
 
 type Props = {
@@ -39,7 +39,7 @@ const rssHref = getRelativeLocaleUrl(
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/svg+xml" href={getAssetPath("favicon.svg")} />
+    <link rel="icon" type="image/png" href={getAssetPath("favicon.png")} />
     <link rel="icon" href={getAssetPath("favicon.ico")} />
     <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
@@ -121,7 +121,7 @@ const rssHref = getRelativeLocaleUrl(
   >
     <slot />
     <script>
-      import "@/lib/theme";
+      import "@/scripts/theme";
     </script>
   </body>
 </html>
