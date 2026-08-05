@@ -8,9 +8,9 @@ import Breadcrumb from "@/components/Breadcrumb.astro";
 import Card from "@/components/Card.astro";
 import Footer from "@/components/Footer.astro";
 import Pagination from "@/components/Pagination.astro";
-import { getUniqueTags } from "@/scripts/getUniqueTags";
-import { getSortedPosts } from "@/scripts/getSortedPosts";
-import { slugifyAll } from "@/scripts/slugify";
+import { getUniqueTags } from "@/scripts/posts/getUniqueTags";
+import { getSortedPosts } from "@/scripts/posts/getSortedPosts";
+import { slugifyAll } from "@/scripts/url/slugify";
 import { useTranslations } from "@/scripts/locales";
 import config from "@/scripts/config";
 

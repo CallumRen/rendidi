@@ -2,8 +2,8 @@ import type { APIRoute } from "astro";
 import { getCollection } from "astro:content";
 import satori from "satori";
 import sharp from "sharp";
-import { getOgFontBuffers } from "@/scripts/getOgFontBuffers";
-import { getPostSlug } from "@/scripts/getPostPaths";
+import { getOgFontBuffers } from "@/scripts/og/getOgFontBuffers";
+import { getPostSlug } from "@/scripts/posts/getPostPaths";
 import config from "@/scripts/config";
 
 export async function getStaticPaths() {

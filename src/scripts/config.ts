@@ -5,7 +5,7 @@
  * apply defaults and expose a fully-resolved config shape (`ResolvedAstroPaperConfig`).
  */
 import userConfig from "@/rendidi.config";
-import type { ResolvedAstroPaperConfig } from "./schema/types";
+import type { ResolvedAstroPaperConfig } from "./types";
 import { PUBLIC_GOOGLE_SITE_VERIFICATION } from "astro:env/client";
 
 const DEFAULT_OG_IMAGE = "default-og.jpg";

@@ -1,5 +1,5 @@
-import type { ResolvedAstroPaperConfig } from "@/scripts/schema/types";
-import { getAssetPath } from "./withBase";
+import type { ResolvedAstroPaperConfig } from "@/scripts/types";
+import { getAssetPath } from "@/scripts/url/withBase";
 
 const publicFiles = import.meta.glob("/public/*", { eager: false });
 

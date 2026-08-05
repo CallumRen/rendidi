@@ -1,7 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 
-const fontsDir = fileURLToPath(new URL("../assets/fonts", import.meta.url));
+const fontsDir = fileURLToPath(new URL("../../assets/fonts", import.meta.url));
 
 /**
  * Load TTF buffers for Satori OG image generation.

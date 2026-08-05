@@ -30,7 +30,7 @@ AstroPaper now ships with Astro v6.3, which includes:
 The flat `SITE` object in `src/config.ts` and the separate `constants.ts` file have been replaced by a single `astro-paper.config.ts` at the project root. Use `defineAstroPaperConfig()` for full IntelliSense:
 
 ```ts file="astro-paper.config.ts"
-import { defineAstroPaperConfig } from "./src/scripts/schema/types";
+import { defineAstroPaperConfig } from "./src/scripts/types";
 
 export default defineAstroPaperConfig({
   site: {

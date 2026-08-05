@@ -1,7 +1,7 @@
 import type { APIRoute } from "astro";
 import satori from "satori";
 import sharp from "sharp";
-import { getOgFontBuffers } from "@/scripts/getOgFontBuffers";
+import { getOgFontBuffers } from "@/scripts/og/getOgFontBuffers";
 import config from "@/scripts/config";
 
 export const GET: APIRoute = async () => {
