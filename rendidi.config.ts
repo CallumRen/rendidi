@@ -9,7 +9,7 @@ export default defineAstroPaperConfig({
     profile: "https://github.com/CallumRen",
     ogImage: "default-og.jpg",
     lang: "en",
-    timezone: "Asia/Bangkok",
+    timezone: "Asia/Shanghai",
     dir: "ltr",
   },
   posts: {

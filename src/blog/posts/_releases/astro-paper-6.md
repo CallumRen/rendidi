@@ -39,7 +39,7 @@ export default defineAstroPaperConfig({
     description: "…",
     author: "Your Name",
     lang: "en",
-    timezone: "UTC",
+    timezone: "Asia/Shanghai",
     googleVerification: "your-verification-value",
   },
   posts: {
