@@ -1,7 +1,7 @@
 import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
-import { getSortedPosts } from "@/scripts/posts/getSortedPosts";
-import { getPostUrl } from "@/scripts/posts/getPostPaths";
+import { getSortedPosts } from "@/scripts/pages/getSortedPosts";
+import { getPostUrl } from "@/scripts/pages/getPostPaths";
 import config from "@/scripts/config";
 
 export async function GET() {

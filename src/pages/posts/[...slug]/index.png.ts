@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import satori from "satori";
 import sharp from "sharp";
 import { getOgFontBuffers } from "@/scripts/og/getOgFontBuffers";
-import { getPostSlug } from "@/scripts/posts/getPostPaths";
+import { getPostSlug } from "@/scripts/pages/getPostPaths";
 import config from "@/scripts/config";
 
 export async function getStaticPaths() {
