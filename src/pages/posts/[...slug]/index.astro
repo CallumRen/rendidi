@@ -9,11 +9,11 @@ import { getPostSlug, getPostUrl } from "@/scripts/pages/getPostPaths";
 import { getSortedPosts } from "@/scripts/pages/getSortedPosts";
 import { slugifyStr } from "@/scripts/url/slugify";
 import { toTransitionName } from "@/scripts/url/toTransitionName";
-import EditPost from "./_components/EditPost.astro";
-import ShareLinks from "./_components/ShareLinks.astro";
-import BackButton from "./_components/BackButton.astro";
-import BackToTopButton from "./_components/BackToTopButton.astro";
-import AdjacentPostNav from "./_components/AdjacentPostNav.astro";
+import EditPost from "@/components/posts/EditPost.astro";
+import ShareLinks from "@/components/posts/ShareLinks.astro";
+import BackButton from "@/components/posts/BackButton.astro";
+import BackToTopButton from "@/components/posts/BackToTopButton.astro";
+import AdjacentPostNav from "@/components/posts/AdjacentPostNav.astro";
 import config from "@/scripts/config";
 
 export async function getStaticPaths() {
