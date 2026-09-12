@@ -1,7 +1,8 @@
 import { readFile } from "node:fs/promises";
-import { fileURLToPath } from "node:url";
+import { resolve } from "node:path";
 
-const fontsDir = fileURLToPath(new URL("../../assets/fonts", import.meta.url));
+// Use the project root so this still works after Astro bundles the file into dist/.
+const fontsDir = resolve(process.cwd(), "src/assets/fonts");
 
 /**
  * Load TTF buffers for Satori OG image generation.
