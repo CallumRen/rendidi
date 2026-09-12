@@ -2,7 +2,7 @@ import { defineAstroPaperConfig } from "./src/scripts/types";
 
 export default defineAstroPaperConfig({
   site: {
-    url: "https://callumren.github.io/rendidi/",  // 个人域名或ip
+    url: "https://callumren.github.io/rendidi/",
     title: "rendidi",
     description: "CallumRen's blog.",
     author: "CallumRen",
