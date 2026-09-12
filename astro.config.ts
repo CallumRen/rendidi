@@ -21,6 +21,7 @@ import config from "./rendidi.config";
 
 export default defineConfig({
   site: config.site.url,
+  base: "/rendidi",
   integrations: [
     mdx(),
     sitemap({
